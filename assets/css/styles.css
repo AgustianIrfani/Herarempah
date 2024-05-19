@@ -11,7 +11,7 @@
   --title-color: #393939;
   --text-color: #000000;
   --text-color-light: #a6a6a6;
-  --body-color: #9cf8d9;
+  --body-color: #c2ffeb;
   --container-color: #ffffff;
 
   /*========== Font and typography ==========*/
@@ -213,7 +213,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #949100;
+  background-color: #09ec55;
 }
 
 @media screen and (max-width: 768px) {
@@ -266,7 +266,7 @@ button[type="submit"]:hover {
   color: var(--first-color);
 }
 .nav__logo:hover {
-  color: var(--text-color);
+  color: #fff;
 }
 
 .nav__link {
@@ -274,7 +274,7 @@ button[type="submit"]:hover {
 }
 
 .nav__link:hover {
-  color: var(--first-color);
+  color: white;
 }
 
 .nav__toggle {
@@ -363,7 +363,7 @@ button[type="submit"]:hover {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: #3d3c3c;
 }
 
 /*========== ABOUT ==========*/
@@ -494,7 +494,7 @@ button[type="submit"]:hover {
 }
 
 .market .market-mall a:hover {
-  background-color: #00c7ce;
+  background-color: #ffffff;
 }
 
 /*========== CONTACT ==========*/
@@ -506,6 +506,13 @@ button[type="submit"]:hover {
   margin-bottom: var(--mb-3);
 }
 
+.contact__container a {
+  color: #27e767;
+}
+
+.contact__container a:hover {
+  color: #5456ff;
+}
 /*========== FOOTER ==========*/
 .footer__container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -572,7 +579,7 @@ footer .socials a {
 
 footer .socials a:hover,
 footer .links a:hover {
-  color: white;
+  color: rgb(0, 255, 179);
 }
 
 footer .links {
@@ -623,6 +630,11 @@ footer .credit a {
   }
   .contact__button {
     justify-self: center;
+  }
+
+  .contact__button a {
+    background-color: #0069a7;
+    color: white;
   }
   .change-theme {
     position: initial;
