@@ -377,7 +377,7 @@ button[type="submit"]:hover {
 
 .about__img {
   width: 280px;
-  border-radius: 0.5rem;
+  border-radius: 30px;
   justify-self: center;
 }
 
@@ -419,10 +419,13 @@ button[type="submit"]:hover {
   display: flex;
   flex-direction: column;
   background-color: var(--container-color);
-  border-radius: 15px;
-  box-shadow: 0 2px 4px rgba(3, 74, 40, 0.15);
+  border-radius: 35px;
+  box-shadow: 0 2px 4px rgba(131, 241, 188, 0.15);
   padding: 0.75rem;
   border: 2px solid rgb(0, 247, 255);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu__img {
@@ -475,13 +478,13 @@ button[type="submit"]:hover {
 .market-mall {
   display: inline-block;
   padding: 10px;
-  background-color: #b6aaec;
+  background-color: #bcb9be;
   margin: 24px;
   width: 300px;
   height: auto;
   align-items: center;
   text-align: center;
-  height: 100px;
+  height: 120px;
   border-radius: 30px;
 }
 
@@ -495,6 +498,7 @@ button[type="submit"]:hover {
 
 .market .market-mall a:hover {
   background-color: #ffffff;
+  color: #09ec55;
 }
 
 /*========== CONTACT ==========*/
@@ -596,7 +600,7 @@ footer .credit {
 }
 
 footer .credit a {
-  color: white;
+  color: #ffffff;
   font-weight: 700;
 }
 
