@@ -19,11 +19,11 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
 
   let nama = document.getElementById("nama").value;
   let jenis = document.getElementById("jenis").value;
-  let selectElement = document.getElementById("berat");
-  let berat =
-    selectElement.options[selectElement.selectedIndex].getAttribute(
-      "data-value"
-    );
+  // let selectElement = document.getElementById("berat");
+  // let berat =
+  //   selectElement.options[selectElement.selectedIndex].getAttribute(
+  //     "data-value"
+  //   );
   let quantity = document.getElementById("quantity").value;
   let alamat = document.getElementById("alamat").value;
   let tanggal = document.getElementById("tanggal").value;
@@ -35,8 +35,8 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
     nama +
     "%0AJenis: " +
     jenis +
-    "%0ABerat PerBungkus: " +
-    berat +
+    // "%0ABerat PerBungkus: " +
+    // berat +
     "%0AJumlah: " +
     quantity +
     "%0AAlamat: " +
@@ -45,7 +45,7 @@ document.getElementById("orderForm").addEventListener("submit", function (e) {
     tanggal +
     "%0ATotal Harga: " +
     total;
-  let url = "https://api.whatsapp.com/send?phone=6281360061316&text=" + text;
+  let url = "https://api.whatsapp.com/send?phone=6282367526080&text=" + text;
 
   window.open(url);
 });
@@ -97,10 +97,10 @@ function showForm(event, jenis, hargaPerKg) {
 }
 
 function hitungTotal() {
-  var berat = parseInt(document.getElementById("berat").value);
+  // var berat = parseInt(document.getElementById("berat").value);
   var hargaPerKg = parseInt(document.getElementById("hargaPerKg").value);
   var quantity = parseInt(document.getElementById("quantity").value);
-  var total = berat * hargaPerKg * quantity;
+  var total = hargaPerKg * quantity;
 
   // Mengubah nilai total ke format mata uang Rupiah
   var totalRupiah = formatRupiah(total.toString(), "Rp. ");
@@ -122,22 +122,22 @@ function formatRupiah(angka, prefix) {
 
   rupiah = split[1] !== undefined ? rupiah + "," + split[1] : rupiah;
   return prefix === undefined
-    ? rupiah + ".000"
+    ? rupiah + ""
     : rupiah
-    ? prefix + rupiah + ".000"
+    ? prefix + rupiah + ""
     : "";
 }
 
 document.addEventListener("click", function (event) {
   var form = document.getElementById("orderForm");
-  if (!form.contains(event.target) && event.target.tagName !== "A") {
+  if (!form.contains(event.target) && event.target.tagName !== "BUTTON") {
     form.style.display = "none";
   }
 });
 
 document.addEventListener("click", function (event) {
   var form = document.getElementById("orderForm");
-  if (!form.contains(event.target) && event.target.tagName !== "A") {
+  if (!form.contains(event.target) && event.target.tagName !== "BUTTON") {
     form.style.display = "none";
   }
 });
@@ -259,7 +259,7 @@ themeButton.addEventListener("click", () => {
 const sr = ScrollReveal({
   origin: "top",
   distance: "30px",
-  duration: 2000,
+  duration: 1000,
   reset: true,
 });
 

@@ -11,7 +11,7 @@
   --title-color: #393939;
   --text-color: #000000;
   --text-color-light: #a6a6a6;
-  --body-color: #c2ffeb;
+  --body-color: #f0f0f0;
   --container-color: #ffffff;
 
   /*========== Font and typography ==========*/
@@ -175,16 +175,16 @@ form {
   height: 100vh; /* Mengisi tinggi layar */
   width: 400px; /* Lebar formulir untuk layar besar */
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(0, 247, 255);
   border-radius: 5px;
-  background-color: #f9f9f9;
+  background-color: #b0cfd1;
   z-index: 1000; /* Membuat formulir dapat discroll jika melebihi tinggi layar */
 }
 
 label {
   display: block;
   margin-bottom: 5px;
-  color: #1d2521;
+  color: #265a4d;
 }
 
 input[type="text"],
@@ -194,13 +194,13 @@ input[type="date"] {
   width: calc(100% - 12px);
   padding: 5px;
   margin-bottom: 8px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 247, 255);
   box-sizing: border-box;
 }
 
 button[type="submit"] {
-  background-color: #c4c116;
+  background-color: #17e4b0;
   color: #fff;
   cursor: pointer;
   width: 100%;
@@ -257,7 +257,7 @@ button[type="submit"]:hover {
 
 .nav__link,
 .nav__toggle {
-  color: var(--text-color);
+  color: #11e964;
   font-weight: var(--font-medium);
 }
 .nav__logo {
@@ -455,14 +455,15 @@ button[type="submit"]:hover {
 }
 
 .menu__button__left {
-  position: absolute;
+  position: relative;
   bottom: 0;
   right: 0;
   display: flex;
   padding: 0.5rem 0.813rem;
   border-radius: 20px;
   background-color: #1aca8f;
-  display: none; /* UNTUK MELAKUKAN PEMESANAN  */
+  border-color: #1d3bbd;
+  /* UNTUK MELAKUKAN PEMESANAN  */
 }
 
 /* market */
@@ -478,7 +479,8 @@ button[type="submit"]:hover {
 .market-mall {
   display: inline-block;
   padding: 10px;
-  background-color: #bcb9be;
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 247, 255);
   margin: 24px;
   width: 300px;
   height: auto;
@@ -497,7 +499,7 @@ button[type="submit"]:hover {
 }
 
 .market .market-mall a:hover {
-  background-color: #ffffff;
+  background-color: rgb(230, 220, 220);
   color: #09ec55;
 }
 
