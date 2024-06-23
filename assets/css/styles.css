@@ -310,7 +310,7 @@ button[type="submit"]:hover {
   z-index: var(--z-tooltip);
   transition: 0.4s;
   visibility: hidden;
-  background-color: var(--first-color);
+  background-color: rgb(3, 88, 88);
 }
 
 .scrolltop:hover {

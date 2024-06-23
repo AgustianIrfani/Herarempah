@@ -60,7 +60,7 @@ readMoreButton.addEventListener("click", function (event) {
   if (!document.getElementById("additional-paragraph")) {
     let additionalParagraph = document.createElement("p");
     additionalParagraph.textContent =
-      "Hera Rempah merupakan UMKM asal medan, yang begerak di bidang penjualan produk rempah kemasan yang sudah memiliki izin edar resmi, saat ini hera rempah memasarkan produknya ke beberapa swalayan dikota medan ";
+      "Hera Rempah merupakan UMKM asal kota medan, yang begerak di bidang penjualan produk rempah kemasan yang sudah memiliki izin edar resmi, saat ini hera rempah memasarkan produknya ke beberapa swalayan dikota medan ";
     additionalParagraph.id = "additional-paragraph";
     aboutParagraph.parentNode.insertBefore(additionalParagraph, readMoreButton);
 
